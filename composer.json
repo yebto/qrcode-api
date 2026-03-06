@@ -1,0 +1,52 @@
+{
+    "name": "yebto/qrcode-api",
+    "description": "PHP SDK for the YEB QR Code API. Generate QR codes and dynamic QR experiences.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "yeb",
+        "api",
+        "sdk",
+        "laravel",
+        "php",
+        "qr-code",
+        "qr",
+        "generator"
+    ],
+    "homepage": "https://yeb.to",
+    "support": {
+        "email": "support@yeb.to",
+        "issues": "https://github.com/yebto/qrcode-api/issues",
+        "source": "https://github.com/yebto/qrcode-api"
+    },
+    "authors": [
+        {
+            "name": "NETOX Ltd.",
+            "email": "support@yeb.to",
+            "homepage": "https://yeb.to",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "yebto/api-client": "^1.0"
+    },
+    "suggest": {
+        "illuminate/support": "Required for Laravel Facade & ServiceProvider integration (^10.0|^11.0|^12.0)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yebto\\QRCodeAPI\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yebto\\QRCodeAPI\\QRCodeAPIServiceProvider"
+            ],
+            "aliases": {
+                "QRCodeAPI": "Yebto\\QRCodeAPI\\Facades\\QRCodeAPI"
+            }
+        }
+    }
+}
